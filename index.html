@@ -2,79 +2,88 @@
 <html>
 <head>
     <title>Florina Osmani Portfolio Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
     <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3293a2c587.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <h1>Florina Osmani</h1>
-        <nav>
-            <ul>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header">
+            <h1>Florina Osmani</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <section id="about-me">
-            <div class="about-me-text">
-                <h2>About Me</h2>
-                <p>Hi, I'm Florina! I'm currently diving into Codecademy's Full-Stack Engineer course,
-                    where I'm building a foundation in web development.
-                    After dabbling in data science and realizing it wasn't for me,
-                    I found my place in web development—a field where I can blend my love for design,
-                    problem-solving, and working remotely.</p>
-                <p>Right now, I'm building up my skills in HTML, CSS, and JavaScript,
-                    aiming to reach a point where I can create a fully functional website from scratch.
-                    My goal is to work as a freelancer, designing websites for small businesses that are accessible,
-                    user-friendly, and, most importantly, make an impact without the need for a big team.</p>
-                <p>When I'm not coding, you'll probably find me knitting, crocheting, painting, or hanging
-                    out with my cat. I love all things DIY, games, art, and am always thinking about ways
-                    to make the world (digital or real) as inclusive as possible.</p>
+            <h2>About Me</h2>
+            <div class="about-me-container">
+                <div class="about-me-text">
+                    <p>Hi, I'm Florina! I'm currently diving into Codecademy's Full-Stack Engineer course,
+                        where I'm building a foundation in web development.
+                        After dabbling in data science and realizing it wasn't for me,
+                        I found my place in web development—a field where I can blend my love for design,
+                        problem-solving, and working remotely.</p>
+                    <p>Right now, I'm building up my skills in HTML, CSS, and JavaScript,
+                        aiming to reach a point where I can create a fully functional website from scratch.
+                        My goal is to work as a freelancer, designing websites for small businesses that are accessible,
+                        user-friendly, and, most importantly, make an impact without the need for a big team.</p>
+                    <p>When I'm not coding, you'll probably find me knitting, crocheting, painting, or hanging
+                        out with my cat. I love all things DIY, games, art, and am always thinking about ways
+                        to make the world (digital or real) as inclusive as possible.</p>
+                </div>
+                <figure class="about-me-figure">
+                    <img src="./resources/images/Placeholder pic.webp" alt="for now just a placeholder">
+                    <figcaption>A breathtaking painting Florina made.</figcaption>
+                </figure>
             </div>
-            <figure>
-                <img src="./resources/images/Placeholder pic.webp" alt="for now just a placeholder">
-                <figcaption>A breathtaking painting Florina Osmani made.</figcaption>
-            </figure>
         </section>
         <section id="projects">
             <h2>Projects</h2>
-            <details>
-                <summary><a href="#">Prompt Generator</a></summary>
-                <img src="./resources/images/Placeholder pic.webp" alt="placeholder">
+            <details name="project">
+                <summary>Prompt Generator</summary>
                 <p>A small JavaScript Prompt generator!</p>
+                <button class="promptbutton start">Try me here!</button>
+                <button class="promptbutton again"> Try again!</button>
             </details>
-            <details>
-                <summary><a href="#">Portfolio Website</a></summary>
-                <img src="./resources/images/Placeholder pic.webp" alt="placeholder">
+            <details name="project">
+                <summary>Portfolio Website</summary>
                 <p>This website I'm making!</p>
             </details>
         </section>
         <section id="skills">
             <h2>Skills</h2>
-            <div class="skill-container">
-                <i class="fa-brands fa-html5"></i>
-                <hr>
-                <p>Basic HTML5 skills!</p>
-            </div>
-            <div class="skill-container">
-                <i class="fa-brands fa-css3-alt"></i>
-                <hr>
-                <p>Basic CSS3 skills!</p>
-            </div>
-            <div class="skill-container">
-                <i class="fa-brands fa-js"></i>
-                <hr>
-                <p>Basic JavaScript skills!</p>
+            <div class="skills-container">
+                <div class="skill">
+                    <i class="fa-brands fa-html5"></i>
+                    <hr>
+                    <p>Basic HTML5 skills!</p>
+                </div>
+                <div class="skill">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <hr>
+                    <p>Basic CSS3 skills!</p>
+                </div>
+                <div class="skill">
+                    <i class="fa-brands fa-js"></i>
+                    <hr>
+                    <p>Basic JavaScript skills!</p>
+                </div>
             </div>
         </section>
     </main>
     <footer>
-        <p>Interested in getting in touch?</p>
-        <p>Get into contact with me <a href="./contact.html">here</a>!</p>
+        <div class="footer">
+            <p>Interested in getting in touch?</p>
+            <p>Get into contact with me <a href="./contact.html">here</a>!</p>
+        </div>
     </footer>
 </body>
 </html>
