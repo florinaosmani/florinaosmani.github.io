@@ -36,7 +36,6 @@ header {
     justify-content: space-between;
     height: 5rem;
     align-items: center;
-    
 }
 
 nav {
@@ -49,14 +48,12 @@ nav {
 }
 
 nav ul {
-    
     display: flex;
     justify-content: space-between;
 }
 
 nav li a {
     font-size: 1.5rem;
-    
 }
 
 /* About Me */
@@ -69,9 +66,12 @@ nav li a {
 
 .about-me-container {
     display: flex;
+    align-items: center;
+    height: 30rem;
 }
 
 .about-me-text {
+    height: 100%;
     max-width: 60%;
     padding-right: 5%;
     display: flex;
@@ -145,4 +145,64 @@ footer {
 
 footer a {
     text-decoration: underline;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 768px) {
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .header, #about-me, #projects, #skills, .footer {
+        max-width: 90%;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    nav li a {
+        font-size: 1.3rem;
+    }
+
+    header, #about-me, #projects, #skills {
+        margin-bottom: 2.5rem;
+    }
+
+    .about-me-container {
+        display: block;
+        height: fit-content;
+    }
+
+    .about-me-text {
+        max-width: 100%;
+        text-align: justify;
+    }
+
+    .about-me-figure {
+        max-width: 100%;
+    }
+
+    .about-me-text p {
+        margin-bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .header h1 {
+        font-size: 1.6rem;
+    }
+
+    nav li a {
+        font-size: 1.1rem;
+    }
+
+    [href*='about-me'] {
+        display: none;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
 }
