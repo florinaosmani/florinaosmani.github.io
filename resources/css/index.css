@@ -3,6 +3,12 @@ html {
     font-size: 16px;
 }
 
+section {
+    max-width: 75%;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+}
+
 h2 {
     font-size: 2rem;
     margin-bottom: 2rem;
@@ -58,12 +64,6 @@ nav li a {
 
 /* About Me */
 
-#about-me {
-    max-width: 75%;
-    margin: 0 auto;
-    margin-bottom: 4rem;
-}
-
 .about-me-container {
     display: flex;
     align-items: center;
@@ -94,10 +94,7 @@ nav li a {
 
 /* Projects */
 
-#projects {
-    max-width: 75%;
-    margin: 0 auto;
-    margin-bottom: 4rem;
+.projects-container {
     line-height: 2rem;
 }
 
@@ -110,12 +107,6 @@ summary {
 }
 
 /* Skills */
-#skills {
-    max-width: 75%;
-    margin: 0 auto;
-    margin-bottom: 4rem;
-}
-
 .skills-container {
     display: flex;
     justify-content: space-around;
@@ -154,7 +145,7 @@ footer a {
         font-size: 1.8rem;
     }
 
-    .header, #about-me, #projects, #skills, .footer {
+    .header, section, .footer {
         max-width: 90%;
     }
 
@@ -166,7 +157,7 @@ footer a {
         font-size: 1.3rem;
     }
 
-    header, #about-me, #projects, #skills {
+    header, section {
         margin-bottom: 2.5rem;
     }
 
